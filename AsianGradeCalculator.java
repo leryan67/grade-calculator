@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class GradeCalculator {
+public class AsianGradeCalculator {
     public static void main(String[] args) {
         String letterGrade = "";
         Scanner input = new Scanner(System.in);
@@ -13,25 +13,25 @@ public class GradeCalculator {
             letterGrade = "G for Genius";
         }
         else if (grade >= 90 && grade <= 100) {
-            letterGrade = "A";
+            letterGrade = "A for Average";
         }
         else if (grade >= 80 && grade < 90) {
-            letterGrade = "B";
+            letterGrade = "B for Below Average";
         }
         else if (grade >= 70 && grade < 80) {
-            letterGrade = "C";
+            letterGrade = "C for Chop Your Hand Off";
         }
         else if (grade >= 60 && grade < 70) {
-            letterGrade = "D";
+            letterGrade = "D for Die";
         }
         else if (grade >= 50 && grade < 60) {
-            letterGrade = "F";
+            letterGrade = "F for Face Hell";
         }
         else {
-            letterGrade = "\"You suck bro\"";
+            letterGrade = "S for Stop Existing";
         }
 
-        System.out.println("Your grade is " + letterGrade);
+        System.out.println("Your grade is: " + letterGrade);
 
         input.close();
     }
