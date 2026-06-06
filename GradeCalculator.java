@@ -9,7 +9,10 @@ public class GradeCalculator {
 
         System.out.println("You entered: " + grade);
 
-        if (grade >= 90 && grade <= 100) {
+        if (grade > 100) {
+            letterGrade = "G for Genius";
+        }
+        else if (grade >= 90 && grade <= 100) {
             letterGrade = "A";
         }
         else if (grade >= 80 && grade < 90) {
@@ -25,9 +28,11 @@ public class GradeCalculator {
             letterGrade = "F";
         }
         else {
-            letterGrade = "\"You suck bro.\"";
+            letterGrade = "\"You suck bro\"";
         }
-        
+
+        System.out.println("Your grade is " + letterGrade);
+
         input.close();
     }
 }
